@@ -20,13 +20,16 @@ class QCLoaders {
           margin: const EdgeInsets.symmetric(horizontal: 30),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            color: THelperFunctions.isDarkMode(Get.context!)
+            color: QCHelperFunctions.isDarkMode(Get.context!)
                 ? QCColors.darkerGrey.withOpacity(0.9)
                 : QCColors.grey.withOpacity(0.9),
           ),
           child: Center(
-              child: Text(message,
-                  style: Theme.of(Get.context!).textTheme.labelLarge)),
+            child: Text(
+              message,
+              style: Theme.of(Get.context!).textTheme.labelLarge,
+            ),
+          ),
         ),
       ),
     );

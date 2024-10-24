@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:917322099017:android:0942e82e88b65cfcd11298",
         "android_client_info": {
-          "package_name": "com.quick_cart.app"
+          "package_name": "com.quick_cart.app.quick_cart"
         }
       },
       "oauth_client": [],

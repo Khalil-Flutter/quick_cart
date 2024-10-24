@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:quick_cart/app.dart';
 import 'package:quick_cart/firebase_options.dart';
 
-Future<void> main() async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

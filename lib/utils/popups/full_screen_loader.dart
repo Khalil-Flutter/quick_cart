@@ -22,7 +22,7 @@ class QCFullScreenLoader {
       builder: (_) => PopScope(
         canPop: false, // Disable popping with the back button
         child: Container(
-          color: THelperFunctions.isDarkMode(Get.context!)
+          color: QCHelperFunctions.isDarkMode(Get.context!)
               ? QCColors.dark
               : QCColors.white,
           width: double.infinity,

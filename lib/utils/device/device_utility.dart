@@ -29,15 +29,16 @@ class QCDeviceUtils {
 
   static void setFullScreen(bool enable) {
     SystemChrome.setEnabledSystemUIMode(
-        enable ? SystemUiMode.immersiveSticky : SystemUiMode.edgeToEdge);
+      enable ? SystemUiMode.immersiveSticky : SystemUiMode.edgeToEdge,
+    );
   }
 
-  static double getScreenHeight() {
-    return MediaQuery.of(Get.context!).size.height;
+  static double getScreenHeight(BuildContext context) {
+    return MediaQuery.sizeOf(Get.context!).height;
   }
 
   static double getScreenWidth(BuildContext context) {
-    return MediaQuery.of(context).size.width;
+    return MediaQuery.sizeOf(Get.context!).width;
   }
 
   static double getPixelRatio() {
@@ -45,7 +46,7 @@ class QCDeviceUtils {
   }
 
   static double getStatusBarHeight() {
-    return MediaQuery.of(Get.context!).padding.top;
+    return MediaQuery.paddingOf(Get.context!).top;
   }
 
   static double getBottomNavigationBarHeight() {
@@ -86,8 +87,10 @@ class QCDeviceUtils {
   }
 
   static void showStatusBar() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-        overlays: SystemUiOverlay.values);
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: SystemUiOverlay.values,
+    );
   }
 
   static Future<bool> hasInternetConnection() async {
