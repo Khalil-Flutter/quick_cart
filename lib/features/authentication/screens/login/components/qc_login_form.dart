@@ -87,7 +87,9 @@ class QCLoginForm extends StatelessWidget {
 
                 /// Forgot Password
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    // Get.to(() => VerifyEmailScreen());
+                  },
                   child: Text(
                     QCTexts.forgetPassword,
                     style: Theme.of(context).textTheme.bodyMedium,

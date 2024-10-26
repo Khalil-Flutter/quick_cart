@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:quick_cart/features/authentication/screens/sign_up/email/verify_email_screen.dart';
 
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
@@ -70,7 +71,7 @@ class QCSignUpForm extends StatelessWidget {
             decoration: InputDecoration(
               labelText: QCTexts.email,
               prefixIcon: Icon(
-                Iconsax.direct_right,
+                Iconsax.direct,
               ),
             ),
           ),
@@ -151,7 +152,7 @@ class QCSignUpForm extends StatelessWidget {
                           ),
                     ),
                     TextSpan(
-                      text: "${QCTexts.and} ",
+                      text: " ${QCTexts.and} ",
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                     TextSpan(
@@ -180,7 +181,9 @@ class QCSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => VerifyEmailScreen());
+              },
               child: Text(
                 QCTexts.createAccount,
               ),

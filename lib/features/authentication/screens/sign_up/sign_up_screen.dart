@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/features/authentication/screens/sign_up/components/qc_sign_up_form.dart';
 import 'package:quick_cart/features/authentication/screens/sign_up/components/qc_sign_up_header.dart';
 import 'package:quick_cart/utils/constants/sizes.dart';
@@ -16,11 +18,9 @@ class SignUpScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () => Get.back(),
           icon: Icon(
-            Icons.arrow_back,
+            Iconsax.arrow_left_1,
             color: Theme.of(context).iconTheme.color,
           ),
         ),
