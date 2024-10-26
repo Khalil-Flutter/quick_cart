@@ -5,6 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../controllers/login/login_controller.dart';
+import '../../sign_up/sign_up_screen.dart';
 
 class QCLoginForm extends StatelessWidget {
   const QCLoginForm({
@@ -116,7 +117,9 @@ class QCLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => SignUpScreen());
+                },
                 child: Text(
                   QCTexts.createAccount,
                 ),
