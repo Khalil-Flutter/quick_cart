@@ -43,9 +43,7 @@ class OnBoardingScreen extends StatelessWidget {
             ),
 
             /// Skip Button
-            OnBoardingSkip(
-              text: QCTexts.skip,
-            ),
+            OnBoardingSkip(),
 
             /// Dot Navigation SmoothPageIndicator
             OnBoardingDotNavigation(),
