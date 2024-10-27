@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:quick_cart/features/authentication/screens/password_configuration/forgot_password_screen.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -88,7 +89,7 @@ class QCLoginForm extends StatelessWidget {
                 /// Forgot Password
                 InkWell(
                   onTap: () {
-                    // Get.to(() => VerifyEmailScreen());
+                    Get.to(() => ForgotPasswordScreen());
                   },
                   child: Text(
                     QCTexts.forgetPassword,
