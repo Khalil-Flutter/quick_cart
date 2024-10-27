@@ -5,8 +5,8 @@ import 'package:quick_cart/features/authentication/screens/sign_up/components/qc
 import 'package:quick_cart/features/authentication/screens/sign_up/components/qc_sign_up_header.dart';
 import 'package:quick_cart/utils/constants/sizes.dart';
 
-import '../../../../common/widgets/qc_form_divider.dart';
-import '../../../../common/widgets/qc_social_button.dart';
+import '../../../../common/widgets/login_signup/qc_form_divider.dart';
+import '../../../../common/widgets/login_signup/qc_social_button.dart';
 import '../../../../utils/constants/text_strings.dart';
 
 class SignUpScreen extends StatelessWidget {

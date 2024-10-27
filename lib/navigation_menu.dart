@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:quick_cart/features/shop/screens/home/components/home_screen.dart';
 import 'package:quick_cart/utils/constants/colors.dart';
 import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
@@ -43,9 +44,7 @@ class NavigationMenu extends StatelessWidget {
 class BottomNavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
-    Container(
-      color: Colors.blue,
-    ),
+    const HomeScreen(),
     Container(
       color: Colors.grey,
     ),
@@ -55,10 +54,6 @@ class BottomNavigationController extends GetxController {
     Container(
       color: Colors.amber,
     ),
-    // HomeScreen(),
-    // StoreScreen(),
-    // WishListScreen(),
-    // ProfileScreen(),
   ];
 
   void changeIndex(int index) {

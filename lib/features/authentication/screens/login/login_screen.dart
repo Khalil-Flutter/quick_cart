@@ -3,8 +3,8 @@ import 'package:quick_cart/features/authentication/screens/login/components/qc_l
 import 'package:quick_cart/features/authentication/screens/login/components/qc_login_header.dart';
 
 import '../../../../common/styles/spacing_styles.dart';
-import '../../../../common/widgets/qc_form_divider.dart';
-import '../../../../common/widgets/qc_social_button.dart';
+import '../../../../common/widgets/login_signup/qc_form_divider.dart';
+import '../../../../common/widgets/login_signup/qc_social_button.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 
