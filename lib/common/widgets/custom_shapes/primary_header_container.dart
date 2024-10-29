@@ -19,7 +19,7 @@ class QCPrimaryHeaderContainer extends StatelessWidget {
         color: QCColors.primary,
         padding: EdgeInsets.all(0),
         child: SizedBox(
-          height: 320,
+          height: 300,
           child: Stack(
             children: [
               Positioned(

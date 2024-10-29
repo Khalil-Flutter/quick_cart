@@ -4,8 +4,8 @@ import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
-class QCVerticalImageText extends StatelessWidget {
-  const QCVerticalImageText({
+class QCCategoryImageAndText extends StatelessWidget {
+  const QCCategoryImageAndText({
     super.key,
     required this.image,
     required this.title,
@@ -43,13 +43,13 @@ class QCVerticalImageText extends StatelessWidget {
                   image: AssetImage(
                     image,
                   ),
-                  color: dark ? QCColors.light : QCColors.dark,
+                  color: dark ? QCColors.dark : QCColors.dark,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             SizedBox(
-              height: QCSizes.sm,
+              height: QCSizes.xs,
             ),
             SizedBox(
               width: 55,
