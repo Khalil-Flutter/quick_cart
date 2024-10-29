@@ -13,17 +13,19 @@ class QCSearchContainer extends StatelessWidget {
     this.icon = Iconsax.search_normal,
     this.showBackGround = true,
     this.showBorder = true,
+    this.padding = const EdgeInsets.symmetric(horizontal: QCSizes.sm),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackGround, showBorder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final dark = QCHelperFunctions.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: QCSizes.md),
+      padding: padding,
       child: Container(
         width: QCDeviceUtils.getScreenWidth(context),
         padding: const EdgeInsets.all(QCSizes.md),

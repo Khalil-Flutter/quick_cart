@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/colors.dart';
 
@@ -30,14 +31,16 @@ class QCCartCounterIcon extends StatelessWidget {
             height: 18,
             width: 18,
             decoration: BoxDecoration(
-              color: QCColors.black.withOpacity(0.8),
+              color: QCHelperFunctions.isDarkMode(context)
+                  ? QCColors.light
+                  : QCColors.dark,
               shape: BoxShape.circle,
             ),
             child: Center(
               child: Text(
                 '2',
                 style: Theme.of(context).textTheme.labelMedium!.apply(
-                      color: QCColors.white,
+                      color: Theme.of(context).scaffoldBackgroundColor,
                       fontSizeFactor: 0.8,
                     ),
               ),

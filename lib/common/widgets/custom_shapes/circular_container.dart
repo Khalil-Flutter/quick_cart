@@ -12,6 +12,8 @@ class QCCircularContainer extends StatelessWidget {
     this.padding,
     this.backgroundColor = QCColors.white,
     this.margin,
+    this.showBorder = false,
+    this.border,
   });
 
   final Widget? child;
@@ -20,6 +22,8 @@ class QCCircularContainer extends StatelessWidget {
   final EdgeInsets? padding;
   final Color backgroundColor;
   final EdgeInsets? margin;
+  final bool? showBorder;
+  final Border? border;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +35,7 @@ class QCCircularContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
+        border: showBorder! ? border : null,
       ),
       child: child,
     );

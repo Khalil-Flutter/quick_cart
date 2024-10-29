@@ -11,6 +11,7 @@ import 'package:quick_cart/utils/constants/sizes.dart';
 import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
 import '../../icon/circular_icon.dart';
+import '../../text/brand_title_with_verified_icon.dart';
 
 class QCProductCardVerticle extends StatelessWidget {
   const QCProductCardVerticle({super.key});
@@ -83,9 +84,6 @@ class QCProductCardVerticle extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: QCSizes.spaceBtwItems / 2,
-            ),
 
             /// -- Details
             Padding(
@@ -101,54 +99,43 @@ class QCProductCardVerticle extends StatelessWidget {
                   SizedBox(
                     height: QCSizes.xs,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(
-                        width: QCSizes.xs,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: QCColors.primary,
-                        size: QCSizes.iconXs,
-                      )
-                    ],
+                  QCBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      QCProductPriceText(
-                        price: "120",
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: QCColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(QCSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(QCSizes.cardRadiusMd),
-                          ),
-                        ),
-                        child: SizedBox(
-                          height: QCSizes.iconLg * 1.2,
-                          width: QCSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: QCColors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                Padding(
+                  padding: const EdgeInsets.only(left: QCSizes.sm),
+                  child: QCProductPriceText(
+                    price: "120",
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: QCColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(QCSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(QCSizes.cardRadiusMd),
+                    ),
+                  ),
+                  child: SizedBox(
+                    height: QCSizes.iconLg * 1.2,
+                    width: QCSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: QCColors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
