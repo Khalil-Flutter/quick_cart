@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/common/styles/product_shadow.dart';
 import 'package:quick_cart/common/widgets/custom_shapes/circular_container.dart';
 import 'package:quick_cart/common/widgets/images/rounded_image.dart';
+import 'package:quick_cart/common/widgets/text/product_price_text.dart';
 import 'package:quick_cart/common/widgets/text/product_title_text.dart';
 import 'package:quick_cart/utils/constants/colors.dart';
 import 'package:quick_cart/utils/constants/image_strings.dart';
@@ -122,11 +123,8 @@ class QCProductCardVerticle extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       /// Price
-                      Text(
-                        '\$120',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
+                      QCProductPriceText(
+                        price: "120",
                       ),
                       Container(
                         decoration: BoxDecoration(
