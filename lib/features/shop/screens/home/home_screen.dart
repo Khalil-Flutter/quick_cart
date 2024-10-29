@@ -4,6 +4,7 @@ import 'package:quick_cart/common/widgets/products/product_card/product_card_ver
 import 'package:quick_cart/features/shop/screens/home/components/promo_slider.dart';
 import 'package:quick_cart/features/shop/screens/home/components/qc_home_app_bar.dart';
 import 'package:quick_cart/utils/constants/image_strings.dart';
+import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
 import '../../../../common/widgets/custom_shapes/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/search_container.dart';
@@ -93,8 +94,23 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: QCSizes.spaceBtwItems,
+                    height: QCSizes.spaceBtwItems / 2,
                   ),
+
+                  /// -- Popular Products --
+                  QCSectionHeadings(
+                    title: 'Popular Products',
+                    textColor: QCHelperFunctions.isDarkMode(context)
+                        ? QCColors.white
+                        : QCColors.black,
+                    showActionButton: true,
+                    onPressed: () {},
+                  ),
+                  SizedBox(
+                    height: QCSizes.spaceBtwItems / 2,
+                  ),
+
+                  /// -- Products --
                   QCGridLayout(
                     itemCount: 10,
                     itemBuilder: (_, index) {

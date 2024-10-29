@@ -18,6 +18,7 @@ class QCSectionHeadings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
@@ -29,9 +30,14 @@ class QCSectionHeadings extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         if (showActionButton)
-          TextButton(
-            onPressed: () {},
-            child: Text(buttonTitle),
+          InkWell(
+            onTap: onPressed,
+            child: Text(
+              buttonTitle,
+              style: Theme.of(context).textTheme.labelMedium!.apply(
+                    color: Theme.of(context).primaryColor,
+                  ),
+            ),
           ),
       ],
     );
