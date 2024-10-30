@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/features/shop/screens/home/home_screen.dart';
 import 'package:quick_cart/features/shop/screens/store/store_screen.dart';
+import 'package:quick_cart/features/shop/screens/wish_list/wish_list_screen.dart';
 import 'package:quick_cart/utils/constants/colors.dart';
 import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
@@ -47,9 +48,7 @@ class BottomNavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     StoreScreen(),
-    Container(
-      color: Colors.teal,
-    ),
+    WishListScreen(),
     Container(
       color: Colors.amber,
     ),
