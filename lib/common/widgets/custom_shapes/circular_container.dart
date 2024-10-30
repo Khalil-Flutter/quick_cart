@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/sizes.dart';
 
 class QCCircularContainer extends StatelessWidget {
   const QCCircularContainer({
     super.key,
     this.child,
-    this.width = 400,
-    this.height = 400,
-    this.radius = 400,
+    this.width,
+    this.height,
+    this.radius = QCSizes.cardRadiusLg,
     this.padding,
     this.backgroundColor = QCColors.white,
     this.margin,
     this.showBorder = false,
-    this.border,
+    this.borderColor = QCColors.borderPrimary,
   });
 
   final Widget? child;
@@ -22,8 +23,8 @@ class QCCircularContainer extends StatelessWidget {
   final EdgeInsets? padding;
   final Color backgroundColor;
   final EdgeInsets? margin;
-  final bool? showBorder;
-  final Border? border;
+  final bool showBorder;
+  final Color borderColor;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class QCCircularContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
-        border: showBorder! ? border : null,
+        border: showBorder ? Border.all(color: borderColor) : null,
       ),
       child: child,
     );

@@ -26,6 +26,9 @@ class QCPrimaryHeaderContainer extends StatelessWidget {
                 top: -200,
                 right: -250,
                 child: QCCircularContainer(
+                  height: 400,
+                  width: 400,
+                  radius: 400,
                   backgroundColor: QCColors.textWhite.withOpacity(0.1),
                 ),
               ),
@@ -33,6 +36,9 @@ class QCPrimaryHeaderContainer extends StatelessWidget {
                 top: 20,
                 right: -300,
                 child: QCCircularContainer(
+                  height: 400,
+                  width: 400,
+                  radius: 400,
                   backgroundColor: QCColors.textWhite.withOpacity(0.1),
                 ),
               ),
