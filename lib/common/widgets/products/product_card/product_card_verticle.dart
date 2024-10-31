@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/common/styles/product_shadow.dart';
 import 'package:quick_cart/common/widgets/custom_shapes/circular_container.dart';
 import 'package:quick_cart/common/widgets/images/rounded_image.dart';
 import 'package:quick_cart/common/widgets/text/product_price_text.dart';
 import 'package:quick_cart/common/widgets/text/product_title_text.dart';
+import 'package:quick_cart/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:quick_cart/utils/constants/colors.dart';
 import 'package:quick_cart/utils/constants/image_strings.dart';
 import 'package:quick_cart/utils/constants/sizes.dart';
@@ -22,7 +24,7 @@ class QCProductCardVerticle extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius, and shadow
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),

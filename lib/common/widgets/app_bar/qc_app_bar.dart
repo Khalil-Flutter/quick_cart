@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/utils/device/device_utility.dart';
+import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
+import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
 class QCAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -30,7 +32,12 @@ class QCAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(Iconsax.arrow_left_1),
+                icon: Icon(
+                  Iconsax.arrow_left_1,
+                  color: QCHelperFunctions.isDarkMode(context)
+                      ? QCColors.white
+                      : QCColors.dark,
+                ),
               )
             : leadingIcon != null
                 ? IconButton(
