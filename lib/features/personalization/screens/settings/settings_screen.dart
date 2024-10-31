@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/common/widgets/app_bar/qc_app_bar.dart';
 import 'package:quick_cart/common/widgets/custom_shapes/primary_header_container.dart';
@@ -8,6 +9,7 @@ import 'package:quick_cart/common/widgets/text/section_heading.dart';
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import '../profile/profile_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -34,7 +36,9 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   /// -- User Profile Card
-                  QCUserProfileCard(),
+                  QCUserProfileCard(
+                    onPressed: () => Get.to(() => ProfileScreen()),
+                  ),
                 ],
               ),
             ),

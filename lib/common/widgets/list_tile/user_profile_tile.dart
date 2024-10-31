@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/utils/constants/colors.dart';
-import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
 import '../../../utils/constants/image_strings.dart';
 import '../images/rounded_image.dart';
@@ -9,11 +8,13 @@ import '../images/rounded_image.dart';
 class QCUserProfileCard extends StatelessWidget {
   const QCUserProfileCard({
     super.key,
+    required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    final dark = QCHelperFunctions.isDarkMode(context);
     return ListTile(
       leading: QCRoundedImage(
         imageURL: QCImages.user,
@@ -35,7 +36,7 @@ class QCUserProfileCard extends StatelessWidget {
             ),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(
           Iconsax.edit,
           color: QCColors.white,
