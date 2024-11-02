@@ -66,7 +66,7 @@ class ProductMetaData extends StatelessWidget {
         /// Title
         QCProductTitleText(title: "Green Nike Air Shoes"),
         SizedBox(
-          height: QCSizes.xs,
+          height: QCSizes.sm,
         ),
 
         /// Stock Status
@@ -86,7 +86,7 @@ class ProductMetaData extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: QCSizes.sm,
+          height: QCSizes.xs,
         ),
 
         ///Brand
@@ -108,6 +108,9 @@ class ProductMetaData extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        SizedBox(
+          height: QCSizes.sm,
         ),
       ],
     );
