@@ -24,7 +24,7 @@ class ProductMetaData extends StatelessWidget {
           children: [
             QCCircularContainer(
               height: 30,
-              width: 40,
+              width: 50,
               radius: QCSizes.sm,
               backgroundColor: QCColors.secondary.withOpacity(0.8),
               padding: const EdgeInsets.symmetric(

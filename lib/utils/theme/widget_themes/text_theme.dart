@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../constants/colors.dart';
 
@@ -8,57 +9,57 @@ class QCTextTheme {
 
   /// Customizable Light Text Theme
   static TextTheme lightTextTheme = TextTheme(
-    headlineLarge: const TextStyle().copyWith(
+    headlineLarge: GoogleFonts.oxygen(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
       color: QCColors.dark,
     ),
-    headlineMedium: const TextStyle().copyWith(
+    headlineMedium: GoogleFonts.oxygen(
       fontSize: 24.0,
       fontWeight: FontWeight.w600,
       color: QCColors.dark,
     ),
-    headlineSmall: const TextStyle().copyWith(
+    headlineSmall: GoogleFonts.oxygen(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
       color: QCColors.dark,
     ),
-    titleLarge: const TextStyle().copyWith(
+    titleLarge: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w600,
       color: QCColors.dark,
     ),
-    titleMedium: const TextStyle().copyWith(
+    titleMedium: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
       color: QCColors.dark,
     ),
-    titleSmall: const TextStyle().copyWith(
+    titleSmall: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       color: QCColors.dark,
     ),
-    bodyLarge: const TextStyle().copyWith(
+    bodyLarge: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       color: QCColors.dark,
     ),
-    bodyMedium: const TextStyle().copyWith(
+    bodyMedium: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.normal,
       color: QCColors.dark,
     ),
-    bodySmall: const TextStyle().copyWith(
+    bodySmall: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       color: QCColors.dark.withOpacity(0.5),
     ),
-    labelLarge: const TextStyle().copyWith(
+    labelLarge: GoogleFonts.oxygen(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
       color: QCColors.dark,
     ),
-    labelMedium: const TextStyle().copyWith(
+    labelMedium: GoogleFonts.oxygen(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
       color: QCColors.dark.withOpacity(0.5),
@@ -67,57 +68,57 @@ class QCTextTheme {
 
   /// Customizable Dark Text Theme
   static TextTheme darkTextTheme = TextTheme(
-    headlineLarge: const TextStyle().copyWith(
+    headlineLarge: GoogleFonts.oxygen(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
       color: QCColors.light,
     ),
-    headlineMedium: const TextStyle().copyWith(
+    headlineMedium: GoogleFonts.oxygen(
       fontSize: 24.0,
       fontWeight: FontWeight.w600,
       color: QCColors.light,
     ),
-    headlineSmall: const TextStyle().copyWith(
+    headlineSmall: GoogleFonts.oxygen(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
       color: QCColors.light,
     ),
-    titleLarge: const TextStyle().copyWith(
+    titleLarge: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w600,
       color: QCColors.light,
     ),
-    titleMedium: const TextStyle().copyWith(
+    titleMedium: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
       color: QCColors.light,
     ),
-    titleSmall: const TextStyle().copyWith(
+    titleSmall: GoogleFonts.oxygen(
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       color: QCColors.light,
     ),
-    bodyLarge: const TextStyle().copyWith(
+    bodyLarge: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       color: QCColors.light,
     ),
-    bodyMedium: const TextStyle().copyWith(
+    bodyMedium: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.normal,
       color: QCColors.light,
     ),
-    bodySmall: const TextStyle().copyWith(
+    bodySmall: GoogleFonts.oxygen(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       color: QCColors.light.withOpacity(0.5),
     ),
-    labelLarge: const TextStyle().copyWith(
+    labelLarge: GoogleFonts.oxygen(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
       color: QCColors.light,
     ),
-    labelMedium: const TextStyle().copyWith(
+    labelMedium: GoogleFonts.oxygen(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
       color: QCColors.light.withOpacity(0.5),

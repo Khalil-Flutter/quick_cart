@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:quick_cart/utils/theme/widget_themes/appbar_theme.dart';
 import 'package:quick_cart/utils/theme/widget_themes/bottom_sheet_theme.dart';
 import 'package:quick_cart/utils/theme/widget_themes/checkbox_theme.dart';
@@ -14,8 +15,8 @@ class QCAppTheme {
   QCAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
+    fontFamily: GoogleFonts.poppins().fontFamily,
     useMaterial3: true,
-    fontFamily: 'Poppins',
     disabledColor: QCColors.grey,
     brightness: Brightness.light,
     primaryColor: QCColors.primary,
@@ -31,8 +32,8 @@ class QCAppTheme {
   );
 
   static ThemeData darkTheme = ThemeData(
+    fontFamily: GoogleFonts.oxygen().fontFamily,
     useMaterial3: true,
-    fontFamily: 'Poppins',
     disabledColor: QCColors.grey,
     brightness: Brightness.dark,
     primaryColor: QCColors.primary,

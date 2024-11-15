@@ -31,10 +31,10 @@ class QCBottomAddToCartWidget extends StatelessWidget {
             children: [
               QCCircularIcon(
                 icon: Iconsax.minus,
-                backgroundColor: QCColors.darkerGrey,
+                backgroundColor: dark ? QCColors.white : QCColors.dark,
                 width: 40,
                 height: 40,
-                color: QCColors.white,
+                color: dark ? QCColors.dark : QCColors.white,
                 onPressed: () {},
               ),
               SizedBox(
@@ -49,10 +49,10 @@ class QCBottomAddToCartWidget extends StatelessWidget {
               ),
               QCCircularIcon(
                 icon: Iconsax.add,
-                backgroundColor: QCColors.black,
+                backgroundColor: dark ? QCColors.white : QCColors.dark,
                 width: 40,
                 height: 40,
-                color: QCColors.white,
+                color: dark ? QCColors.dark : QCColors.white,
                 onPressed: () {},
               ),
               SizedBox(
@@ -71,6 +71,9 @@ class QCBottomAddToCartWidget extends StatelessWidget {
             ),
             child: Text(
               "Add to Cart",
+              style: TextStyle(
+                color: dark ? QCColors.dark : QCColors.white,
+              ),
             ),
           )
         ],

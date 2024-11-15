@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/common/widgets/text/section_heading.dart';
 import 'package:quick_cart/features/shop/screens/product_details/components/bottom_add_to_cart_widget.dart';
@@ -6,6 +7,7 @@ import 'package:quick_cart/features/shop/screens/product_details/components/prod
 import 'package:quick_cart/features/shop/screens/product_details/components/product_image_slider.dart';
 import 'package:quick_cart/features/shop/screens/product_details/components/product_meta_data.dart';
 import 'package:quick_cart/features/shop/screens/product_details/components/rating_and_share.dart';
+import 'package:quick_cart/features/shop/screens/product_reviews/product_reviews_screen.dart';
 import 'package:quick_cart/utils/helpers/helper_functions.dart';
 import 'package:readmore/readmore.dart';
 
@@ -92,7 +94,8 @@ class ProductDetailsScreen extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () =>
+                            Get.to(() => ProductRatingAndReviewsScreen()),
                         icon: Icon(Iconsax.arrow_right_3),
                       )
                     ],
