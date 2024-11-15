@@ -5,6 +5,7 @@ import 'package:quick_cart/common/widgets/app_bar/qc_app_bar.dart';
 import 'package:quick_cart/common/widgets/custom_shapes/primary_header_container.dart';
 import 'package:quick_cart/common/widgets/list_tile/setting_menu_tile.dart';
 import 'package:quick_cart/common/widgets/text/section_heading.dart';
+import 'package:quick_cart/features/personalization/screens/address/address_screen.dart';
 
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
@@ -57,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
                     title: "My Addresses",
                     subtitle: "Set Shopping delivery addresses",
                     icon: Iconsax.safe_home,
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   QCSettingMenuTile(
                     title: "My Cart",
