@@ -110,7 +110,7 @@ class AddNewAddressScreen extends StatelessWidget {
                     onPressed: () {},
                     child: Text("Save"),
                   ),
-                )
+                ),
               ],
             ),
           ),

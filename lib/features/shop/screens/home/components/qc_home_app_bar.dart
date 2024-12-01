@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/app_bar/qc_app_bar.dart';
 import '../../../../../common/widgets/products/carts/cart_counter_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../cart/cart_screen.dart';
 
 class QCHomeAppBar extends StatelessWidget {
   const QCHomeAppBar({
@@ -34,7 +36,7 @@ class QCHomeAppBar extends StatelessWidget {
       ),
       actions: [
         QCCartCounterIcon(
-          onPressed: () {},
+          onPressed: () => Get.to(() => CartScreen()),
           iconColor: QCColors.white,
         ),
       ],

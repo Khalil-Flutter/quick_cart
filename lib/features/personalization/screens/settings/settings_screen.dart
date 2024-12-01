@@ -10,6 +10,7 @@ import 'package:quick_cart/features/personalization/screens/address/address_scre
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import '../../../shop/screens/cart/cart_screen.dart';
 import '../profile/profile_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -64,7 +65,7 @@ class SettingsScreen extends StatelessWidget {
                     title: "My Cart",
                     subtitle: "Add, remove Products and move to checkout",
                     icon: Iconsax.shopping_cart,
-                    onTap: () {},
+                    onTap: () => Get.to(() => CartScreen()),
                   ),
                   QCSettingMenuTile(
                     title: "My Orders",
