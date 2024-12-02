@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quick_cart/common/widgets/app_bar/qc_app_bar.dart';
+import 'package:quick_cart/features/shop/screens/cart/components/cart_items.dart';
 import 'package:quick_cart/utils/constants/sizes.dart';
 
-import '../../../../common/widgets/products/carts/add_remove_button.dart';
-import '../../../../common/widgets/products/carts/cart_item.dart';
+import '../checkout/checkout.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -19,28 +20,9 @@ class CartScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(QCSizes.md),
-        child: ListView.separated(
-          shrinkWrap: true,
-          itemCount: 10,
-          separatorBuilder: (_, __) => SizedBox(
-            height: QCSizes.md,
-          ),
-          itemBuilder: (_, index) {
-            return Column(
-              children: [
-                QCCartItem(),
-                SizedBox(
-                  height: QCSizes.sm,
-                ),
-                QCProductQuantityWithAddAndRemoveButton(),
-              ],
-            );
-          },
-        ),
-      ),
+          padding: EdgeInsets.all(QCSizes.md), child: QCCartItems()),
       bottomNavigationBar: ElevatedButton(
-        onPressed: () {},
+        onPressed: () => Get.to(() => Checkout()),
         child: Text("Checkout \$122"),
       ),
     );

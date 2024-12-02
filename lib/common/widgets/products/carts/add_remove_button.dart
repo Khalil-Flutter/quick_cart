@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:quick_cart/common/widgets/text/product_price_text.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -17,47 +16,35 @@ class QCProductQuantityWithAddAndRemoveButton extends StatelessWidget {
     final dark = QCHelperFunctions.isDarkMode(context);
 
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
-          children: [
-            SizedBox(
-              width: 70,
-            ),
-            QCCircularIcon(
-              icon: Iconsax.minus,
-              width: 32,
-              height: 32,
-              size: QCSizes.md,
-              backgroundColor: dark ? QCColors.white : QCColors.dark,
-              color: dark ? QCColors.dark : QCColors.white,
-              onPressed: () {},
-            ),
-            SizedBox(
-              width: QCSizes.md,
-            ),
-            Text(
-              '1',
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-            SizedBox(
-              width: QCSizes.md,
-            ),
-            QCCircularIcon(
-              icon: Iconsax.add,
-              backgroundColor: dark ? QCColors.white : QCColors.dark,
-              width: 32,
-              height: 32,
-              size: QCSizes.md,
-              color: dark ? QCColors.dark : QCColors.white,
-              onPressed: () {},
-            ),
-            SizedBox(
-              width: QCSizes.md,
-            ),
-          ],
+        QCCircularIcon(
+          icon: Iconsax.minus,
+          width: 32,
+          height: 32,
+          size: QCSizes.md,
+          backgroundColor: dark ? QCColors.white : QCColors.dark,
+          color: dark ? QCColors.dark : QCColors.white,
+          onPressed: () {},
         ),
-        QCProductPriceText(price: "122"),
+        SizedBox(
+          width: QCSizes.md,
+        ),
+        Text(
+          '1',
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
+        SizedBox(
+          width: QCSizes.md,
+        ),
+        QCCircularIcon(
+          icon: Iconsax.add,
+          backgroundColor: dark ? QCColors.white : QCColors.dark,
+          width: 32,
+          height: 32,
+          size: QCSizes.md,
+          color: dark ? QCColors.dark : QCColors.white,
+          onPressed: () {},
+        ),
       ],
     );
   }
