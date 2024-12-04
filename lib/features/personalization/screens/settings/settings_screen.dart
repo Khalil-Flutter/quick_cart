@@ -11,6 +11,7 @@ import '../../../../common/widgets/list_tile/user_profile_tile.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../shop/screens/cart/cart_screen.dart';
+import '../../../shop/screens/order/order_screen.dart';
 import '../profile/profile_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -71,7 +72,7 @@ class SettingsScreen extends StatelessWidget {
                     title: "My Orders",
                     subtitle: "In-progress and completed orders",
                     icon: Iconsax.shopping_bag,
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrderScreen()),
                   ),
                   QCSettingMenuTile(
                     title: "Bank Account",
