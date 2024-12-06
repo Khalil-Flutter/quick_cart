@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quick_cart/common/widgets/products/product_card/product_card_verticle.dart';
 import 'package:quick_cart/features/shop/screens/home/components/promo_slider.dart';
 import 'package:quick_cart/features/shop/screens/home/components/qc_home_app_bar.dart';
+import 'package:quick_cart/features/shop/screens/sub_category/sub_category.dart';
 import 'package:quick_cart/utils/constants/image_strings.dart';
 import 'package:quick_cart/utils/helpers/helper_functions.dart';
 
@@ -67,7 +69,9 @@ class HomeScreen extends StatelessWidget {
                               return QCCategoryImageAndText(
                                 image: QCImages.sportIcon,
                                 title: 'Sports',
-                                onTap: () {},
+                                onTap: () => Get.to(
+                                  () => SubCategoryScreen(),
+                                ),
                               );
                             },
                           ),

@@ -22,7 +22,7 @@ class QCProductTitleText extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
       textAlign: textAlign,
       style: smallSize
-          ? Theme.of(context).textTheme.labelLarge
+          ? Theme.of(context).textTheme.bodyMedium
           : Theme.of(context).textTheme.titleSmall,
     );
   }
