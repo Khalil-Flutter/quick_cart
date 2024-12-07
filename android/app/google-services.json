@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "917322099017",
     "project_id": "quick-cart-dca0e",
-    "storage_bucket": "quick-cart-dca0e.appspot.com"
+    "storage_bucket": "quick-cart-dca0e.firebasestorage.app"
   },
   "client": [
     {
@@ -12,7 +12,20 @@
           "package_name": "com.quick_cart.app.quick_cart"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "917322099017-3jk29q72vkcu519iunu3r8n1s2gd8okl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quick_cart.app.quick_cart",
+            "certificate_hash": "f0f5022bbe78248b56f9ec716470644f62fb3ccb"
+          }
+        },
+        {
+          "client_id": "917322099017-kghs1g10806i6mq0ohoj8u9p68q0fgvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC7dn04RrfJVvcK4vGZgWCSF7scQKr4InY"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917322099017-kghs1g10806i6mq0ohoj8u9p68q0fgvq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "917322099017-cuthupu44mnc16ku4e9pp6qb8rgthm34.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quickcart.app.quickCart"
+              }
+            }
+          ]
         }
       }
     }

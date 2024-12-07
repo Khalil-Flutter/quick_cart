@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quick_cart/features/personalization/screens/splash_screen.dart';
+import 'package:quick_cart/utils/constants/colors.dart';
 import 'package:quick_cart/utils/constants/text_strings.dart';
 import 'package:quick_cart/utils/theme/theme.dart';
 
@@ -16,7 +16,14 @@ class QCApp extends StatelessWidget {
       darkTheme: QCAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: SplashScreen(),
+      home: Scaffold(
+        backgroundColor: QCColors.primary,
+        body: Center(
+          child: CircularProgressIndicator(
+            color: QCColors.white,
+          ),
+        ),
+      ),
     );
   }
 }

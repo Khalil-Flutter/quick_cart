@@ -74,7 +74,7 @@ class QCProductCardHorizontal extends StatelessWidget {
                     icon: Iconsax.heart5,
                     color: Colors.red,
                   ),
-                )
+                ),
               ],
             ),
           ),
